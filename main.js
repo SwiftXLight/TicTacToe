@@ -107,3 +107,10 @@ cells.forEach((cell, i) => {
 });
 
 resetBtn.addEventListener('click', resetBoard);
+
+/* light-dark theme switch */
+const themeSwitch = document.querySelector('input');
+
+themeSwitch.addEventListener('change', () => {
+   document.body.classList.toggle('dark-theme');
+});
